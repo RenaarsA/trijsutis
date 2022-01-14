@@ -20,8 +20,10 @@ function nolasa() {
     return p;
   }
   function laukums(m1,m2,m3){
+    const m = nolasa();
+    m1 = m.m1; m2 = m.m2; m3 = m.m3;
     const pusp = perimetrs(m1,m2,m3)/2;
-    const l = Math.sqrt((pusp-m1)*(pusp-m2)*(pusp-m3));
+    let l = Math.sqrt(pusp*(pusp-m1)*(pusp-m2)*(pusp-m3));
               console.log(l);
     return l;
   }

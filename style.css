@@ -3,14 +3,31 @@ body {
     font-weight: 300;
     line-height: 1.42em;
     color:#A7A1AE;
-    background-color:#1F2739;
+    
+    background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+    background-size: 1200% 1200%;
+    -webkit-animation: rainbow 30s ease infinite;
+    animation: rainbow 30s ease infinite;
   }
+  @-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  @keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  
+  }
+  
 h1 {
     font-size:3em; 
     font-weight: 300;
     line-height:1em;
     text-align: center;
-    color: #4DC3FA;
+    font-weight: bold;
+    text-decoration: underline;
   }
   p {
     font-size:1em; 
@@ -19,7 +36,8 @@ h1 {
     display: block;
     line-height:1em;
     padding-bottom: 2em;
-    color: #FB667A;
+    color:azure;
+    font-weight: bold;
   }
   
     .mala {
@@ -47,12 +65,12 @@ h1 {
   
   /* Background-color of the odd rows */
   .mala:nth-child(odd) {
-        background-color: #323C50;
+    background-color:transparent;
   }
   
   /* Background-color of the even rows */
   .mala:nth-child(even) {
-        background-color: #2C3446;
+        background-color:transparent;
   }
   
   .mala {
@@ -69,7 +87,7 @@ h1 {
   }
   
   .mala:hover {
-    background-color: #FFF842;
+    background-color:greenyellow;
     color: #403E10;
     font-weight: bold;
     
@@ -81,7 +99,44 @@ h1 {
         transition-property: all;
     transition-timing-function: line;
   }
-  /*https://codepen.io/nohoid/pen/kIfto  background color  
+ .lol{
   
-  
+  font-size:1em; 
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height:1em;
+    padding-bottom: 2em;
+    color:azure;
+    font-weight: bold;
+ }
+ button{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: transparent;
+    margin-left:70%
+    
+    
+    }
+    button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+    img{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; 
+      mix-blend-mode: multiply;
+    }
   

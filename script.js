@@ -54,7 +54,7 @@ function rezultats() {
                 t += "Tas ir vienādmalu trijstūris."
             } else {
             if(m1==m2||m2==m3||m1==m3){
-                t+=" Tas ir vienāsānu trijstūris."
+                t+=" Tas ir vienādsānu trijstūris."
             }
         }
         }

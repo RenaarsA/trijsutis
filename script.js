@@ -52,8 +52,11 @@ function rezultats() {
             t += " Perimetrs ir " + p + " un laukums ir " + s + ".";
             if (m1 == m2 && m2 == m3) {
                 t += "Tas ir vienādmalu trijstūris."
+            } else {
+            if(m1==m2){
+                t+=" Tas ir vienāsānu trijstūris."
             }
-
+        }
         }
     }
     console.log(t);
